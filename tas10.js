@@ -11,5 +11,5 @@ function onsubmit(e){
         email : e.target.email.value
     }
     myobj_serialized = JSON.stringify(myobj);
-    localStorage.setItem('myobj',myobj_serialized);
+    localStorage.setItem(myobj.email,myobj_serialized);
 }
